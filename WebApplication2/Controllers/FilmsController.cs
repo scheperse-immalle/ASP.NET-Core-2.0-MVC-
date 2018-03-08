@@ -9,8 +9,13 @@ using WebApplication2.Models;
 
 namespace WebApplication2.Data
 {
+   
     public class FilmsController : Controller
     {
+        public string Route(string naam)
+        {
+            return $"Ik heet {naam}";
+        }
         private readonly FilmDbContext _context;
 
         public FilmsController(FilmDbContext context)

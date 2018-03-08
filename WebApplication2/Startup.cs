@@ -35,8 +35,7 @@ namespace WebApplication2
             services.AddDbContext<FilmDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("FilmDbContext")));
 
-            services.AddDbContext<FruitsDbContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("FruitsDbContext")));
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
