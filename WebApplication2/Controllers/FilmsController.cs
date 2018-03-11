@@ -16,6 +16,10 @@ namespace WebApplication2.Data
         {
             return $"Ik heet {naam}";
         }
+        public string Parameters(string naam, int leeftijd)
+        {
+            return "Naam : " + naam + " Leeftijd : " + leeftijd;
+        }
         private readonly FilmDbContext _context;
 
         public FilmsController(FilmDbContext context)
